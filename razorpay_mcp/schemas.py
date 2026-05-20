@@ -2,12 +2,6 @@ from typing import Optional
 from typing_extensions import TypedDict
 
 
-class RazorpayAuth(TypedDict):
-    """Razorpay API key credentials passed per request."""
-    key_id: str
-    key_secret: str
-
-
 class OrderNotes(TypedDict, total=False):
     """Arbitrary key-value notes attached to an order or refund."""
     shipping_address: str
